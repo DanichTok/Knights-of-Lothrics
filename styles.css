@@ -1,0 +1,60 @@
+       body{
+    background-color: #444444; /* Цвет фона веб-страницы */
+   } 
+       .Nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+   width: 1920px;
+    height: 73px;
+    background: rgba(65, 60, 60, 0.4);
+   position: absolute; /* Абсолютное позиционирование */
+    bottom: 880px; /* Положение от нижнего края */
+    right: 5px; /* Положение от правого края */
+   }
+      .discord{
+   border: 1px solid #7e7e7e;
+   border-radius: 5px;
+   width: 35px;
+   height: 35px;
+   background: #3f3c3d;
+   position: absolute; /* Абсолютное позиционирование */
+    bottom: 900px; /* Положение от нижнего края */
+    right: 320px; /* Положение от правого края */
+      }
+      .discord-img {
+         width: 189;
+         height: 100;
+         position: absolute; /* Абсолютное позиционирование */
+    bottom: 909px; /* Положение от нижнего края */
+    right: 327px; /* Положение от правого края */
+      }
+   @font-face {
+      font-family: "Minecraft";
+      src: url(minecraft.ttf);
+   }
+   .Minecraft{
+   font-family: "Minecraft", sans-serif;
+   font-weight: 400;
+   font-size: 26px;
+   line-height: 100%;
+   color: #847d80;
+         position: absolute; /* Абсолютное позиционирование */
+    bottom: 909px; /* Положение от нижнего края */
+    right: 1261px; /* Положение от правого края */
+   }
+   .text1{
+   font-family: "Minecraft", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 100%;
+   color: #fff;
+         position: absolute; /* Абсолютное позиционирование */
+    bottom: 894px; /* Положение от нижнего края */
+    right: 1414px; /* Положение от правого края */
+   }
+   .Lothric{
+   stroke-width: 2px;
+   stroke: #fff;
+   position: absolute; /* Абсолютное позиционирование */
+    bottom: 894px; /* Положение от нижнего края */
+    right: 1563px; /* Положение от правого края */
+   }
