@@ -1,48 +1,72 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Knights of Lothric</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  <link rel="icon" href="Lothric111.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <link rel="icon" href="Lothric111.png" type="image/png" />
 </head>
 <body>
-                  <!-- Шапка сайта верхний блок -->>
-  <Div class="Nav"></Div> 
-    <div class="discord" ></div>
-      <a href="https://discord.gg/Wga3ysv3y4">
-        <img src="img/discord.svg" alt="lorem" class="discord-img">
-      </a>
-          <div class="Minecraft" >Knights of Lothric</div>
-            <Div class="text1">Ахуенный клан</Div>
-                <img src="img/Lothric.svg" alt="lorem" class="Lothric">
-                  <!-- Основа сайта -->
-  <div class="text2">Атмосферность,<br><span style="color:#7d7b7b;">крутость</span> и похуизм</div>
-  <div class="text3">Knights of Lothric - это объединение<br> ахуенных тимейтов, который творят<br> только то, что им<br> разрешено Кодексом Ордена.</div>
-  <img src="img/Lothric2.svg" alt="lorem" class="Lothric2">
-  <div class="block1"></div>
-  <div class="block2"></div>
-  <div class="block3"></div>
-  <div class="text4">Полезные статьи для нашей <span style="color: #7d7b7b;">организаций</span></div>
-  <div class="text5">Рекомендуем к прочтению</div>
-  <div class="block5">
-    <div class="text6">Cis Tierlist</div>
-      <div class="text7">Сайт тирлиста по которому<br> мы выбираем пвп игроков</div>
-        <div class="block6"></div>
-          <div class="text8">Популярная статья</div>
-            <div class="block7"></div>
-              <a href="https://cistiers.net/">
-                <img src="img/URL.svg" alt="lorem" class="URL">
-              </a>
-  </div>
-  <div class="block8">
-    <div class="text9">IQ</div>
-      <div class="text10">Сайт IQ теста по которому мы находим клоунов!</div>
-        <div class="block9"></div>
-          <div class="text11">Полезная статья</div>
-            <div class="block10"></div>
-              <a href="https://ru.iq-test.cc/">
-                <img src="img/URL.svg" alt="lorem" class="URL2">
-              </a>
-  </div>
+  <!-- Шапка сайта -->
+  <header class="header">
+    <a href="https://discord.gg/Wga3ysv3y4" class="discord-link" target="_blank">
+      <img src="img/discord.svg" alt="Присоединиться к Discord" class="discord-img" />
+    </a>
+    <div class="logo-text">
+      <div class="site-title">Knights of Lothric</div>
+      <div class="tagline">Ахуенный клан</div>
+    </div>
+    <img src="img/Lothric.svg" alt="Логотип Knights of Lothric" class="lothric-logo" />
+  </header>
+
+  <!-- Основное содержимое -->
+  <main class="main">
+    <h1 class="hero-title">Атмосферность,<br><span>крутость</span> и похуизм</h1>
+    <p class="hero-desc">
+      Knights of Lothric — это объединение<br>
+      ахуенных тимейтов, который творят<br>
+      только то, что им<br>
+      разрешено Кодексом Ордена.
+    </p>
+    <img src="img/Lothric2.svg" alt="" class="lothric2" />
+
+    <section class="articles">
+      <h2 class="articles-title">Полезные статьи для нашей <span>организации</span></h2>
+      <p class="articles-subtitle">Рекомендуем к прочтению</p>
+
+      <div class="cards">
+        <!-- Карточка 1 -->
+        <article class="card">
+          <h3 class="card-title">Cis Tierlist</h3>
+          <p class="card-desc">Сайт тирлиста по которому мы выбираем пвп игроков</p>
+          <span class="label">Популярная статья</span>
+          <a href="https://cistiers.net/" target="_blank" class="card-link">
+            <img src="img/URL.svg" alt="Перейти" class="url-icon" />
+          </a>
+        </article>
+
+        <!-- Карточка 2 -->
+        <article class="card">
+          <h3 class="card-title">IQ</h3>
+          <p class="card-desc">Сайт IQ теста по которому мы находим клоунов!</p>
+          <span class="label">Полезная статья</span>
+          <a href="https://ru.iq-test.cc/" target="_blank" class="card-link">
+            <img src="img/URL.svg" alt="Пройти тест" class="url-icon" />
+          </a>
+        </article>
+
+        <!-- Карточка 3 -->
+        <article class="card">
+          <h3 class="card-title">Майнкрафт</h3>
+          <p class="card-desc">Сайт официального майнкрафта</p>
+          <span class="label">Полезная статья</span>
+          <a href="https://www.minecraft.net/" target="_blank" class="card-link">
+            <img src="img/URL.svg" alt="Перейти" class="url-icon" />
+          </a>
+        </article>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
