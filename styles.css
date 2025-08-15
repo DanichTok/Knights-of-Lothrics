@@ -636,6 +636,122 @@ stroke: #fff;
    width: 25px;
    height: 25px;
    position: absolute; /* Абсолютное позиционирование */
-   bottom: 170px;
-    left: 38px;
+   bottom: 173px;
+    left: 32px;
+   }
+   .text30{
+   font-family: "Minecraft", sans-serif;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 100%;
+   color: #fff;
+   position: absolute; /* Абсолютное позиционирование */
+       bottom: 101px;
+    left: 32px;
+   }
+   .text31{
+   font-family: "Minecraft", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   color: rgba(255, 255, 255, 0.5);
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: 42px;
+    left: 32px;
+   }
+   .block34{
+   border-radius: 10px;
+   width: 50px;
+   height: 50px;
+   background: #2b2b2b;
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: 159px;
+    left: 20px;
+   }
+   .block35{
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: 173px;
+    left: 32px;
+   }
+   .block36{
+   border-radius: 12px;
+   width: 1280px;
+   height: 154px;
+   background: #171717;
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: -1900px;
+    left: 329px;
+   }
+   .block37{
+   border-radius: 12px 12px 0 0;
+   width: 1280px;
+   height: 62px;
+   background: #2b2a2a;
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: -1807px;
+    left: 329px;
+   }
+   .img{
+   stroke-width: 13px;
+   stroke: #fff;
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: -1900px;
+    left: 385px;
+   }
+   .text35{
+   font-family: "Minecraft", sans-serif;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 143%;
+   color: #fff;
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: -1789px;
+    left: 636px;
+   }
+   .text36{
+   font-family: "Minecraft", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   color: #fff;
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: -1884px;
+    left: 636px;
+   }
+   .text37{
+   font-family: "Minecraft", sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 150%;
+   text-align: right;
+   color: #fff;
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: -1881px;
+    left: 1309px;
+   }
+   .text38{
+   font-family: "Minecraft", sans-serif;
+   font-weight: 600;
+   font-size: 16px;
+   line-height: 150%;
+   text-align: right;
+   color: #fff;
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: -1901px;
+    left: 1309px;
+   }
+   .img2{
+   position: absolute; /* Абсолютное позиционирование */
+       bottom: -1790px;
+    left: 1418px;
+   }
+   .img3{
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: -1790px;
+    left: 1378px;
+   }
+   .img4{
+   position: absolute; /* Абсолютное позиционирование */
+   bottom: -1790px;
+    left: 1462px;
    }
