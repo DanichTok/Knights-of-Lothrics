@@ -28,7 +28,7 @@ body {
 .Nav {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     height: 80px;
-    background: rgba(65, 60, 60, 0.4);
+    background: rgba(63, 61, 61, 0.918);
     position: fixed;
     top: 0;
     left: 0;
@@ -149,7 +149,7 @@ body {
 .Lothric2 {
     width: 200px;
     height: 200px;
-    stroke-width: 12px;
+    stroke-width: 13px;
     stroke: #fff;
     margin-bottom: 40px;
     position: relative;
@@ -163,7 +163,7 @@ body {
     width: 300px;
     height: 150px;
     position: absolute;
-    bottom: 2364px;
+    bottom: 2173px;
     left: 1144px;
     display: none;
 }
@@ -175,7 +175,7 @@ body {
     filter: blur(50px);
     background: #dbd3d6;
     position: absolute;
-        bottom: 2330px;
+    bottom: 2163px;
     left: 1244px;
     opacity: 0.5;
     display: none;
@@ -188,6 +188,9 @@ body {
     border-radius: 35px;
     margin: 20px;
     margin-top: 60px;
+    position: relative;
+    top: 10px;
+    left: 270px;
 }
 
 .text4 {
@@ -198,6 +201,9 @@ body {
     text-align: center;
     color: #fff;
     margin-bottom: 10px;
+    position: relative;
+    top: -23px;
+    left: 140px;
 }
 
 .text5 {
@@ -208,6 +214,9 @@ body {
     text-align: center;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 30px;
+    position: relative;
+    top: -38px;
+    left: 477px;
 }
 
 .features-grid {
@@ -252,7 +261,24 @@ body {
     font-size: 14px;
     text-align: center;
     color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+    position: relative;
+    top: 36px;
+    left: -1px;
+}
+.tags{
+    border-radius: 10px;
+    width: auto;
+    height: 28px;
+    background: #575355;
+    padding: 5px 10px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 0px;
+    position: relative;
+    top: 54px;
+    left: -1px;
 }
 
 .url-button {
@@ -286,14 +312,31 @@ body {
     width: 100%;
     background: #3c3b3b;
     padding: 20px;
+    position: relative;
+    top: 11px;
+    left: 248px;
 }
 
-.content-left {
+.content-leftdown {
     max-width: 100%;
+    height: 568px;
+    position: relative;
+    top: -335px;
+    left: 248px;
 }
 
-.content-right {
+.content-leftup {
+    height: 221px;
+}
+.content-rightdown {
     max-width: 100%;
+    height: 221px;
+    position: relative;
+    top: 11px;
+    left: 248px;
+}
+.content-rightup{
+    height: 568px;
 }
 
 .text15, .text17, .text23, .block23 {
@@ -314,30 +357,72 @@ body {
     margin-bottom: 15px;
 }
 
-.block18, .block20, .block21, .block25, .block26 {
-    width: 50px;
-    height: 50px;
+.block18{
+    width: 84px;
+    height: 160px;
     stroke-width: 4px;
     stroke: #fff;
+    position: relative;
+    top: -90px;
+    left: 513px;
+}
+.block20{
+    width: 176px;
+    height: 205px;
+    stroke-width: 4px;
+    stroke: #fff;
+    position: relative;
+    top: 129px;
+    left: 3px;
+}
+.block21{
+    width: 176px;
+    height: 205px;
+    stroke-width: 4px;
+    stroke: #fff;
+    position: relative;
+    top: 126px;
+    left: 230px;
+}
+
+.block25{
+   width: 203px;
+    height: 145px;
+    stroke-width: 4px;
+    stroke: #fff;
+    position: relative;
+    top: -120px;
+    left: 395px;
+}
+.block26{
+    width: 66px;
+    height: 78px;
+    stroke-width: 4px;
+    stroke: #fff;
+    position: relative;
+    top: -153px;
+    left: 203px;
 }
 
 .block19 {
     border-radius: 35px;
     width: 100%;
-    height: 150px;
+    height: 320px;
     background: #484747;
     margin: 15px 0;
     position: relative;
+    top: 11px;
+    left: 0px;
     overflow: hidden;
 }
 
 .block22 {
     fill: #5d5d5d;
-    width: 30px;
-    height: 30px;
+    width: 130px;
+    height: 100px;
     position: absolute;
-    bottom: 20px;
-    left: 50%;
+    bottom: 138px;
+    left: 60%;
     transform: translateX(-50%);
 }
 
@@ -348,8 +433,8 @@ body {
     line-height: 1.4;
     color: #fff;
     position: absolute;
-    bottom: 50px;
-    left: 50%;
+    bottom: 182px;
+    left: 61%;
     transform: translateX(-50%);
     text-align: center;
 }
@@ -358,7 +443,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.15);
     border-radius: 10px;
     width: 100%;
-    height: 200px;
+    height: 317px;
     margin: 15px 0;
 }
 
@@ -435,6 +520,8 @@ body {
     margin: 20px;
     margin-top: 40px;
     position: relative;
+        top: -405px;
+        left: 9px;
 }
 
 .footer-top {
@@ -667,7 +754,7 @@ body {
     .features {
         margin: 60px;
         background: #101010;
-        width: calc(100% - 120px);
+        width: calc(100% - 625px);
     }
     
     .text4 {
@@ -695,6 +782,9 @@ body {
     
     .faq {
         padding: 40px 60px;
+        position: relative;
+        top: -405px;
+        left: 263px;
     }
     
     .text25 {
