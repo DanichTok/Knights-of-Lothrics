@@ -26,19 +26,20 @@ body {
 
 /* Navigation */
 .Nav {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    height: 80px;
-    background: rgba(63, 61, 61, 0.918);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;
+    height: 80px;
+    background: rgba(63, 61, 61, 0.918);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
     padding: 0 20px;
+    z-index: 1000;
+    /* Важно: контекст для абсолютного позиционирования */
+    position: relative;
 }
-
 .discord {
     border: 1px solid #7e7e7e;
     border-radius: 5px;
@@ -65,19 +66,8 @@ body {
     font-size: 20px;
     color: #847d80;
     position: relative;
-    top: 1px;
+    top: -3px;
     left: 73px;
-}
-
-.text1 {
-    font-family: "Minecraft", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: #fff;
-    margin-left: 10px;
-    position: relative;
-    top: 24px;
-    left: -225px;
 }
 
 .Lothric {
@@ -85,10 +75,27 @@ body {
     height: 30px;
     stroke-width: 2px;
     stroke: #fff;
-    margin-left: 10px;
-    position: relative;
-    top: 8px;
-    left: -434px;
+    position: absolute;
+    top: 32px;
+    left: 135px;
+    z-index: 10;
+}
+
+/* Текст "Ебал вас в жопу" — абсолютно позиционирован, НЕ влияет на макет */
+.text1 {
+    font-family: "Minecraft", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    position: absolute;
+    top: 67px;
+    left: 194px;
+    white-space: nowrap;
+    z-index: 11;
+    margin: 0;
+    padding: 0;
+    pointer-events: none; /* не мешает кликам */
+    user-select: none;
 }
 
 /* Navigation Menu */
@@ -520,7 +527,7 @@ body {
     margin: 20px;
     margin-top: 40px;
     position: relative;
-        top: -405px;
+    top: 37px;
         left: 9px;
 }
 
@@ -581,9 +588,26 @@ body {
     gap: 15px;
 }
 
-.img2, .img3, .img4 {
+.img4 {
     width: 30px;
     height: 30px;
+    position: relative;
+    top: -252px;
+    left: 0px;
+}
+.img2{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -252px;
+    left: 0px;
+}
+.img3{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: -252px;
+    left: 0px;
 }
 
 /* Tablet Styles */
@@ -783,8 +807,10 @@ body {
     .faq {
         padding: 40px 60px;
         position: relative;
-        top: -405px;
+        top: -328px;
         left: 263px;
+        width: 73%;
+        height: 393px;
     }
     
     .text25 {
@@ -801,4 +827,215 @@ body {
         margin: 60px;
         width: calc(100% - 120px);
     }
+}
+/* === PRELOADER === */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #101010;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.6s ease;
+    font-family: "Minecraft", sans-serif;
+}
+
+.preloader-content {
+    text-align: center;
+}
+
+.preloader-logo {
+    width: 80px;
+    height: 80px;
+    stroke: #c5a67d;
+    margin-bottom: 15px;
+    animation: pulse 1.5s infinite alternate;
+}
+
+@keyframes pulse {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
+
+.preloader-text {
+    font-size: 16px;
+    color: #c5a67d;
+    margin-bottom: 20px;
+}
+
+.preloader-bar {
+    width: 260px;
+    height: 6px;
+    background: #333;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.preloader-progress {
+    width: 0;
+    height: 100%;
+    background: #c5a67d;
+    transition: width 0.1s linear;
+}
+
+/* === КНОПКА ТЕМЫ === */
+#theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #c5a67d;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.1);
+    background: #d4b88c;
+}
+
+/* === УЛУЧШЕННАЯ СВЕТЛАЯ ТЕМА === */
+body[data-theme="light"] {
+    background-color: #f8f8f8;
+    color: #222;
+}
+
+body[data-theme="light"] .Nav {
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
+
+body[data-theme="light"] .Minecraft,
+body[data-theme="light"] .text1 {
+    color: #555;
+}
+
+body[data-theme="light"] .Lothric,
+body[data-theme="light"] .Lothric2,
+body[data-theme="light"] .Lothric3,
+body[data-theme="light"] .Lothric4,
+body[data-theme="light"] .Lothric5,
+body[data-theme="light"] .Lothric6,
+body[data-theme="light"] .Lothric7 {
+    filter: brightness(0) saturate(100%);
+}
+
+body[data-theme="light"] .features {
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+
+body[data-theme="light"] .text4,
+body[data-theme="light"] .text5 {
+    color: #333;
+}
+
+body[data-theme="light"] .feature-card {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    color: #222;
+}
+
+body[data-theme="light"] .tag,
+body[data-theme="light"] .tags {
+    background: #e0e0e0;
+    color: #333;
+}
+
+body[data-theme="light"] .content-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    color: #222;
+}
+
+body[data-theme="light"] .text15,
+body[data-theme="light"] .text17,
+body[data-theme="light"] .text23,
+body[data-theme="light"] .block23 {
+    color: #555;
+}
+
+body[data-theme="light"] .text16,
+body[data-theme="light"] .text18,
+body[data-theme="light"] .text19,
+body[data-theme="light"] .text21,
+body[data-theme="light"] .text22,
+body[data-theme="light"] .text24,
+body[data-theme="light"] .text3,
+body[data-theme="light"] .text7,
+body[data-theme="light"] .text10,
+body[data-theme="light"] .text13 {
+    color: #444;
+}
+
+body[data-theme="light"] .faq {
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+
+body[data-theme="light"] .faq-item {
+    background: #fafafa;
+    border: 1px solid #e0e0e0;
+    color: #222;
+}
+
+body[data-theme="light"] .text25 {
+    color: #333;
+}
+
+body[data-theme="light"] .text27,
+body[data-theme="light"] .text29,
+body[data-theme="light"] .text31 {
+    color: #666;
+}
+
+body[data-theme="light"] .footer {
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+
+body[data-theme="light"] .footer-top {
+    background: #f0f0f0;
+}
+
+body[data-theme="light"] .text35,
+body[data-theme="light"] .text36,
+body[data-theme="light"] .copyright {
+    color: #444;
+}
+
+body[data-theme="light"] .discord {
+    background: #e0e0e0;
+    border-color: #bbb;
+}
+
+body[data-theme="light"] .discord-img {
+    filter: brightness(0);
+}
+
+body[data-theme="light"] .nav-link,
+body[data-theme="light"] .nav-item {
+    color: #555;
+}
+
+/* Явное изменение цвета иконок URL в светлой теме */
+body[data-theme="light"] .URL,
+body[data-theme="light"] .URL2,
+body[data-theme="light"] .URL3 {
+    filter: brightness(0) saturate(100%);
 }
