@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Прогресс-бар (1 секунда)
     const progress = preloader.querySelector('.preloader-progress');
     let width = 0;
-    const duration = 1000; // 1 секунда
+    const duration = 1000;
     const interval = 10;
     const step = (interval / duration) * 100;
 
@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
             preloader.remove();
             document.body.style.visibility = 'visible';
             document.body.style.opacity = '1';
-        }, 400); // Ускорили исчезновение
+        }, 400);
     }
 
     // Скрываем контент до загрузки
@@ -70,13 +70,18 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.setAttribute('data-theme', theme);
     }
 
-    // === 3. АНИМАЦИЯ ПЕЧАТИ ТОЛЬКО ДЛЯ .text1 ===
+    // === 3. АНИМАЦИЯ ПЕЧАТИ С НОВЫМИ ФРАЗАМИ ===
     const textElement = document.querySelector('.text1');
     if (textElement) {
         const phrases = [
             "Ебал вас в жопу",
             "Кошак сын Аказика",
-            "Ахуенный клан"
+            "Ахуенный клан",
+            "Lothric Never Die",
+            "Влад соси бибу",
+            "Крутышка крутая шишка",
+            "Марта соси",
+            "Я арбузик я еблан"
         ];
         let phraseIndex = 0;
 
@@ -100,10 +105,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 setTimeout(() => {
                     phraseIndex = (phraseIndex + 1) % phrases.length;
                     showNextPhrase();
-                }, 10000);
+                }, 10000); // 10 секунд на фразу
             });
         }
 
+        // Начинаем с первой фразы
         showNextPhrase();
     }
 
@@ -121,14 +127,13 @@ document.addEventListener("DOMContentLoaded", () => {
             e.preventDefault();
             const href = this.getAttribute('href');
 
-            // Усиленное затемнение
             document.body.style.opacity = '0';
-            document.body.style.transition = 'opacity 0.6s ease'; // Делаем медленнее для эффекта
+            document.body.style.transition = 'opacity 0.6s ease';
             document.body.style.background = document.body.getAttribute('data-theme') === 'dark' ? '#000' : '#fff';
 
             setTimeout(() => {
                 window.location.href = href;
-            }, 600); // Подождали 0.6 сек — полное затемнение
+            }, 600);
         });
     });
 
